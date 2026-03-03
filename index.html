@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock of Aces</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+    }
+
+    .flyer-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .flyer-wrap img {
+      width: 100%;
+      display: block;
+    }
+
+    /* Clickable heart zone — sits over the red heart in the flyer */
+    .heart-link {
+      position: absolute;
+      top: 37%;
+      left: 73%;
+      transform: translate(-50%, -50%);
+      width: 18%;
+      height: 7%;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 50%;
+
+      /* Uncomment to see hit zone while adjusting position: */
+      /* background: rgba(255,0,0,0.4); */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flyer-wrap">
+    <img src="flyer.png" alt="Rock of Aces Flyer" />
+    <a 
+      class="heart-link" 
+      href="https://partiful.com/e/6v9ZZYBKLFxVgoQEFPV3" 
+      target="_blank" 
+      aria-label="RSVP on Partiful"
+    ></a>
+  </div>
+
+</body>
+</html>
